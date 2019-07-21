@@ -1,0 +1,943 @@
+
+*** Running vivado
+    with args -log hw_acc_sha256_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_acc_sha256_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source hw_acc_sha256_0_0.tcl -notrace
+Command: synth_design -top hw_acc_sha256_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8964 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 349.543 ; gain = 106.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hw_acc_sha256_0_0' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ip/hw_acc_sha256_0_0/synth/hw_acc_sha256_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'sha256' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:77]
+INFO: [Synth 8-638] synthesizing module 'sha256_AXILiteS_s_axi' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 10'b0000000000 
+	Parameter ADDR_GIE bound to: 10'b0000000100 
+	Parameter ADDR_IER bound to: 10'b0000001000 
+	Parameter ADDR_ISR bound to: 10'b0000001100 
+	Parameter ADDR_BASE_OFFSET_DATA_0 bound to: 10'b1000000000 
+	Parameter ADDR_BASE_OFFSET_CTRL bound to: 10'b1000000100 
+	Parameter ADDR_BYTES_DATA_0 bound to: 10'b1000001000 
+	Parameter ADDR_BYTES_CTRL bound to: 10'b1000001100 
+	Parameter ADDR_DATA_BASE bound to: 10'b0100000000 
+	Parameter ADDR_DATA_HIGH bound to: 10'b0111111111 
+	Parameter ADDR_DIGEST_BASE bound to: 10'b1000100000 
+	Parameter ADDR_DIGEST_HIGH bound to: 10'b1000111111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256_AXILiteS_s_axi_ram' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:548]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sha256_AXILiteS_s_axi_ram' (1#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:548]
+INFO: [Synth 8-638] synthesizing module 'sha256_AXILiteS_s_axi_ram__parameterized0' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:548]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sha256_AXILiteS_s_axi_ram__parameterized0' (1#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:548]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:297]
+WARNING: [Synth 8-6014] Unused sequential element int_digest_shift_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:538]
+INFO: [Synth 8-256] done synthesizing module 'sha256_AXILiteS_s_axi' (2#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'sha256_seg_buf' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_seg_buf.v:62]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256_seg_buf_ram' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_seg_buf.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_seg_buf.v:26]
+INFO: [Synth 8-256] done synthesizing module 'sha256_seg_buf_ram' (3#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_seg_buf.v:9]
+INFO: [Synth 8-256] done synthesizing module 'sha256_seg_buf' (4#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_seg_buf.v:62]
+INFO: [Synth 8-638] synthesizing module 'sha256_sha256ctx_bkb' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_sha256ctx_bkb.v:66]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256_sha256ctx_bkb_ram' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_sha256ctx_bkb.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_sha256ctx_bkb.v:27]
+INFO: [Synth 8-256] done synthesizing module 'sha256_sha256ctx_bkb_ram' (5#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_sha256ctx_bkb.v:9]
+INFO: [Synth 8-256] done synthesizing module 'sha256_sha256ctx_bkb' (6#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_sha256ctx_bkb.v:66]
+INFO: [Synth 8-638] synthesizing module 'sha256_final' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 14'b00000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 14'b00000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 14'b00000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 14'b00000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 14'b00000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 14'b00000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 14'b00000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 14'b00000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 14'b00000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 14'b00001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 14'b00010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 14'b00100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 14'b01000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 14'b10000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:119]
+INFO: [Synth 8-638] synthesizing module 'sha256_transform' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 11'b00000000001 
+	Parameter ap_ST_fsm_state2 bound to: 11'b00000000010 
+	Parameter ap_ST_fsm_state3 bound to: 11'b00000000100 
+	Parameter ap_ST_fsm_state4 bound to: 11'b00000001000 
+	Parameter ap_ST_fsm_state5 bound to: 11'b00000010000 
+	Parameter ap_ST_fsm_state6 bound to: 11'b00000100000 
+	Parameter ap_ST_fsm_state7 bound to: 11'b00001000000 
+	Parameter ap_ST_fsm_state8 bound to: 11'b00010000000 
+	Parameter ap_ST_fsm_state9 bound to: 11'b00100000000 
+	Parameter ap_ST_fsm_state10 bound to: 11'b01000000000 
+	Parameter ap_ST_fsm_state11 bound to: 11'b10000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:98]
+INFO: [Synth 8-638] synthesizing module 'sha256_transform_k' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:43]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256_transform_k_rom' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './sha256_transform_k_rom.dat' is read successfully [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:24]
+INFO: [Synth 8-256] done synthesizing module 'sha256_transform_k_rom' (7#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:9]
+INFO: [Synth 8-256] done synthesizing module 'sha256_transform_k' (8#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:43]
+INFO: [Synth 8-638] synthesizing module 'sha256_transform_m' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_m.v:66]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256_transform_m_ram' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_m.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_m.v:27]
+INFO: [Synth 8-256] done synthesizing module 'sha256_transform_m_ram' (9#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_m.v:9]
+INFO: [Synth 8-256] done synthesizing module 'sha256_transform_m' (10#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_m.v:66]
+INFO: [Synth 8-256] done synthesizing module 'sha256_transform' (11#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:10]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:908]
+INFO: [Synth 8-256] done synthesizing module 'sha256_final' (12#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:10]
+INFO: [Synth 8-638] synthesizing module 'sha256_update' [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_state4 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state5 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:109]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:521]
+INFO: [Synth 8-256] done synthesizing module 'sha256_update' (13#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:10]
+INFO: [Synth 8-256] done synthesizing module 'sha256' (14#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:12]
+INFO: [Synth 8-256] done synthesizing module 'hw_acc_sha256_0_0' (15#1) [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ip/hw_acc_sha256_0_0/synth/hw_acc_sha256_0_0.v:57]
+WARNING: [Synth 8-3331] design sha256_transform_m has unconnected port reset
+WARNING: [Synth 8-3331] design sha256_transform_k has unconnected port reset
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[31]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[30]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[29]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[28]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[27]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[26]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[25]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[24]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[23]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[22]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[21]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[20]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[19]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[18]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[17]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[16]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[15]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[14]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[13]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[12]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[11]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[10]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[9]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[8]
+WARNING: [Synth 8-3331] design sha256_sha256ctx_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design sha256_seg_buf has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 407.840 ; gain = 164.961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 407.840 ; gain = 164.961
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ip/hw_acc_sha256_0_0/constraints/sha256_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ip/hw_acc_sha256_0_0/constraints/sha256_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/sha256_acc2/acc2/acc2.runs/hw_acc_sha256_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/sha256_acc2/acc2/acc2.runs/hw_acc_sha256_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 786.520 ; gain = 1.625
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 786.520 ; gain = 543.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 786.520 ; gain = 543.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/sha256_acc2/acc2/acc2.runs/hw_acc_sha256_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 786.520 ; gain = 543.641
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element int_data_shift_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:461]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:33]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_38_fu_726_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_fu_434_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_508_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element i_1_reg_322_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:448]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "tmp_84_fu_825_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_70_fu_628_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_617_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "exitcond_fu_810_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element i_0_in_reg_393_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:390]
+WARNING: [Synth 8-6014] Unused sequential element i_1_in_reg_373_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:398]
+WARNING: [Synth 8-6014] Unused sequential element i_2_reg_382_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:406]
+INFO: [Synth 8-5544] ROM "tmp_84_fu_825_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_70_fu_628_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_617_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "exitcond_fu_810_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element ctx_bitlen_fu_96_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:237]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:280]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_114_reg_946_reg' and it is trimmed from '6' to '5' bits. [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:636]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_reg_831_reg' and it is trimmed from '10' to '8' bits. [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:642]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_125_reg_851_reg' and it is trimmed from '10' to '8' bits. [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:592]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_722_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_611_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_s_fu_595_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond5_fu_621_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element seg_offset_fu_142_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:477]
+INFO: [Synth 8-5546] ROM "exitcond_fu_722_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_611_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_s_fu_595_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond5_fu_621_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 786.520 ; gain = 543.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 8     
+	   2 Input     32 Bit       Adders := 25    
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 11    
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 9     
+	   3 Input     32 Bit         XORs := 8     
+	   2 Input      3 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 126   
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 20    
++---RAMs : 
+	               2K Bit         RAMs := 3     
+	              512 Bit         RAMs := 2     
+	              256 Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 108   
+	   2 Input     12 Bit        Muxes := 1     
+	  12 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 12    
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 19    
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 44    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sha256_AXILiteS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 2     
+Module sha256_AXILiteS_s_axi_ram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 2     
+Module sha256_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module sha256_seg_buf_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module sha256_sha256ctx_bkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module sha256_transform_k_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module sha256_transform_m_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module sha256_transform 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   3 Input     32 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 22    
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	  12 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module sha256_final 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      3 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 16    
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module sha256_update 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module sha256 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 35    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 24    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exitcond_fu_508_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_38_fu_726_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element k_U/sha256_transform_k_rom_U/q0_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:33]
+WARNING: [Synth 8-6014] Unused sequential element i_1_reg_322_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:448]
+INFO: [Synth 8-5545] ROM "icmp_fu_617_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "exitcond_fu_810_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element i_1_in_reg_373_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:398]
+WARNING: [Synth 8-6014] Unused sequential element i_2_reg_382_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:406]
+WARNING: [Synth 8-6014] Unused sequential element i_0_in_reg_393_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_final.v:390]
+INFO: [Synth 8-5546] ROM "exitcond_fu_508_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_38_fu_726_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element k_U/sha256_transform_k_rom_U/q0_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform_k.v:33]
+WARNING: [Synth 8-6014] Unused sequential element i_1_reg_322_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_transform.v:448]
+WARNING: [Synth 8-6014] Unused sequential element ctx_bitlen_fu_96_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_update.v:237]
+INFO: [Synth 8-5545] ROM "tmp_s_fu_595_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond5_fu_621_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "icmp_fu_611_p2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element seg_offset_fu_142_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256.v:477]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[31]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[30]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[29]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[28]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[27]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[26]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[25]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[24]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[23]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[22]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[21]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[20]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[19]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[18]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[17]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[16]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[15]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[14]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[13]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[12]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[11]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[10]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[9]
+WARNING: [Synth 8-3331] design sha256_update has unconnected port len[8]
+INFO: [Synth 8-3971] The signal sha256_AXILiteS_s_axi_U/int_data/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element sha256_AXILiteS_s_axi_U/int_digest/q0_reg was removed.  [e:/sha256_acc2/acc2/acc2.srcs/sources_1/bd/hw_acc/ipshared/42ee/hdl/verilog/sha256_AXILiteS_s_axi.v:588]
+INFO: [Synth 8-3971] The signal sha256_AXILiteS_s_axi_U/int_digest/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal seg_buf_U/sha256_seg_buf_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal sha256ctx_data_U/sha256_sha256ctx_bkb_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal m_U/sha256_transform_m_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'sha256_transform:/j_1_reg_1146_reg[0]' (FDE) to 'sha256_transform:/tmp_13_reg_1135_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sha256_transform:/tmp_13_reg_1135_reg[1]' (FDE) to 'sha256_transform:/j_1_reg_1146_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_9_37/\seg_offset_fu_142_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_sha256_final_fu_260/tmp_91_reg_1166_reg[0]' (FDE) to 'inst/grp_sha256_final_fu_260/tmp_95_reg_1172_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_sha256_final_fu_260/tmp_91_reg_1166_reg[1]' (FDE) to 'inst/grp_sha256_final_fu_260/tmp_95_reg_1172_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_sha256_final_fu_260/i_3_cast1_reg_1148_reg[3]' (FD) to 'inst/grp_sha256_final_fu_260/i_3_cast1_reg_1148_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_sha256_final_fu_260/\i_3_cast1_reg_1148_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_sha256_final_fu_260/\tmp_95_reg_1172_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/tmp_125_reg_851_reg[0]' (FDE) to 'inst/tmp_125_reg_851_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_125_reg_851_reg[1]' (FDE) to 'inst/tmp_125_reg_851_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_125_reg_851_reg[2]' (FDE) to 'inst/tmp_125_reg_851_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_125_reg_851_reg[3]' (FDE) to 'inst/tmp_125_reg_851_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/tmp_125_reg_851_reg[4]' (FDE) to 'inst/tmp_125_reg_851_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_125_reg_851_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (i_9_0) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_2) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_4) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_6) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_8) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_10) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_12) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_14) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_16) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_18) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_20) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_22) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_24) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_26) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_28) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_30) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_32) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_34) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_36) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_38) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_40) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_42) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_44) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_46) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_48) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_50) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_52) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_54) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_56) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_58) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_60) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_62) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (i_9_64) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg_1146_reg[6]) is unused and will be removed from module sha256_transform.
+WARNING: [Synth 8-3332] Sequential element (j_reg_311_reg[6]) is unused and will be removed from module sha256_transform.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[2]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[3]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[4]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[5]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[8]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[9]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[10]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[11]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[12]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[13]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[14]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[15]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[16]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[17]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[18]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[19]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[20]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[21]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[22]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[23]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[24]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[25]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[26]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[27]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[28]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[29]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[30]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (seg_offset_fu_142_reg[31]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (tmp_125_reg_851_reg[5]) is unused and will be removed from module sha256.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 786.520 ; gain = 543.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------------+-------------------------------------+---------------+----------------+
+|Module Name            | RTL Object                          | Depth x Width | Implemented As | 
++-----------------------+-------------------------------------+---------------+----------------+
+|sha256_transform_k_rom | q0_reg                              | 64x32         | Block RAM      | 
+|sha256_transform       | k_U/sha256_transform_k_rom_U/q0_reg | 64x32         | Block RAM      | 
+|sha256_transform       | k_U/sha256_transform_k_rom_U/q0_reg | 64x32         | Block RAM      | 
++-----------------------+-------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sha256_AXILiteS_s_axi_ram:                 | gen_write[1].mem_reg | 64 x 32(READ_FIRST)    | W | R | 64 x 32(READ_FIRST)    | W | R | Port A and B     | 0      | 1      | 
+|sha256_AXILiteS_s_axi_ram__parameterized0: | gen_write[1].mem_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|sha256_seg_buf_ram:                        | ram_reg              | 64 x 8(WRITE_FIRST)    | W | R | 64 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|sha256_sha256ctx_bkb_ram:                  | ram_reg              | 64 x 8(WRITE_FIRST)    | W | R | 64 x 8(WRITE_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|sha256_transform_m_ram:                    | ram_reg              | 64 x 32(WRITE_FIRST)   | W | R | 64 x 32(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
+|sha256_transform_m_ram:                    | ram_reg              | 64 x 32(WRITE_FIRST)   | W | R | 64 x 32(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
++-------------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 824.809 ; gain = 581.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal sha256ctx_data_U/sha256_sha256ctx_bkb_ram_U/ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 992.813 ; gain = 749.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sha256_AXILiteS_s_axi_ram:                 | gen_write[1].mem_reg                                | 64 x 32(READ_FIRST)    | W | R | 64 x 32(READ_FIRST)    | W | R | Port A and B     | 0      | 1      | 
+|sha256_AXILiteS_s_axi_ram__parameterized0: | gen_write[1].mem_reg                                | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|sha256_seg_buf_ram:                        | ram_reg                                             | 64 x 8(WRITE_FIRST)    | W | R | 64 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|inst                                       | sha256ctx_data_U/sha256_sha256ctx_bkb_ram_U/ram_reg | 64 x 8(WRITE_FIRST)    | W | R | 64 x 8(WRITE_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|sha256_transform_m_ram:                    | ram_reg                                             | 64 x 32(WRITE_FIRST)   | W | R | 64 x 32(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
+|sha256_transform_m_ram:                    | ram_reg                                             | 64 x 32(WRITE_FIRST)   | W | R | 64 x 32(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
++-------------------------------------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_final_fu_260/grp_sha256_transform_fu_494/j_reg_311_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_final_fu_260/grp_sha256_transform_fu_494/j_reg_311_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_final_fu_260/grp_sha256_transform_fu_494/tmp_13_reg_1135_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_final_fu_260/grp_sha256_transform_fu_494/j_1_reg_1146_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/grp_sha256_transform_fu_208/j_reg_311_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/grp_sha256_transform_fu_208/j_reg_311_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/grp_sha256_transform_fu_208/tmp_13_reg_1135_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/grp_sha256_transform_fu_208/j_1_reg_1146_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[2]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[3]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[4]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[5]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[6]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (grp_sha256_update_fu_279/ctx_bitlen_fu_96_reg[7]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[7]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[6]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[5]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[4]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[3]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[2]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_2_fu_102_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[7]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[6]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[5]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[4]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[3]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[2]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[1]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (reg_463_reg[0]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_1_reg_888_reg[7]) is unused and will be removed from module sha256.
+WARNING: [Synth 8-3332] Sequential element (sha256ctx_bitlen_0_1_reg_888_reg[6]) is unused and will be removed from module sha256.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4480] The timing for the instance inst/sha256_AXILiteS_s_axi_U/int_data/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/sha256_AXILiteS_s_axi_U/int_data/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/sha256_AXILiteS_s_axi_U/int_digest/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/seg_buf_U/sha256_seg_buf_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/sha256ctx_data_U/sha256_sha256ctx_bkb_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/sha256ctx_data_U/sha256_sha256ctx_bkb_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_final_fu_260/grp_sha256_transform_fu_494/m_U/sha256_transform_m_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_final_fu_260/grp_sha256_transform_fu_494/m_U/sha256_transform_m_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_final_fu_260/grp_sha256_transform_fu_494/k_U/sha256_transform_k_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_final_fu_260/grp_sha256_transform_fu_494/k_U/sha256_transform_k_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_update_fu_279/grp_sha256_transform_fu_208/m_U/sha256_transform_m_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_update_fu_279/grp_sha256_transform_fu_208/m_U/sha256_transform_m_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_update_fu_279/grp_sha256_transform_fu_208/k_U/sha256_transform_k_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/grp_sha256_update_fu_279/grp_sha256_transform_fu_208/k_U/sha256_transform_k_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   445|
+|2     |LUT1       |    43|
+|3     |LUT2       |   687|
+|4     |LUT3       |  1572|
+|5     |LUT4       |  1137|
+|6     |LUT5       |   878|
+|7     |LUT6       |   698|
+|8     |MUXF7      |     8|
+|9     |RAMB18E1   |     1|
+|10    |RAMB18E1_1 |     1|
+|11    |RAMB18E1_2 |     2|
+|12    |RAMB36E1   |     2|
+|13    |RAMB36E1_1 |     2|
+|14    |FDRE       |  4137|
+|15    |FDSE       |   146|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+------------------------------------------+------+
+|      |Instance                           |Module                                    |Cells |
++------+-----------------------------------+------------------------------------------+------+
+|1     |top                                |                                          |  9759|
+|2     |  inst                             |sha256                                    |  9759|
+|3     |    grp_sha256_final_fu_260        |sha256_final                              |  4105|
+|4     |      grp_sha256_transform_fu_494  |sha256_transform_0                        |  2773|
+|5     |        k_U                        |sha256_transform_k_1                      |     1|
+|6     |          sha256_transform_k_rom_U |sha256_transform_k_rom_4                  |     1|
+|7     |        m_U                        |sha256_transform_m_2                      |   130|
+|8     |          sha256_transform_m_ram_U |sha256_transform_m_ram_3                  |   130|
+|9     |    grp_sha256_update_fu_279       |sha256_update                             |  3792|
+|10    |      grp_sha256_transform_fu_208  |sha256_transform                          |  2815|
+|11    |        k_U                        |sha256_transform_k                        |     1|
+|12    |          sha256_transform_k_rom_U |sha256_transform_k_rom                    |     1|
+|13    |        m_U                        |sha256_transform_m                        |   130|
+|14    |          sha256_transform_m_ram_U |sha256_transform_m_ram                    |   130|
+|15    |    seg_buf_U                      |sha256_seg_buf                            |     7|
+|16    |      sha256_seg_buf_ram_U         |sha256_seg_buf_ram                        |     7|
+|17    |    sha256_AXILiteS_s_axi_U        |sha256_AXILiteS_s_axi                     |   435|
+|18    |      int_data                     |sha256_AXILiteS_s_axi_ram                 |    58|
+|19    |      int_digest                   |sha256_AXILiteS_s_axi_ram__parameterized0 |    98|
+|20    |    sha256ctx_data_U               |sha256_sha256ctx_bkb                      |     8|
+|21    |      sha256_sha256ctx_bkb_ram_U   |sha256_sha256ctx_bkb_ram                  |     8|
++------+-----------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 151 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1002.109 ; gain = 380.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1002.109 ; gain = 759.230
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 461 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 176 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1002.109 ; gain = 769.156
+INFO: [Common 17-1381] The checkpoint 'E:/sha256_acc2/acc2/acc2.runs/hw_acc_sha256_0_0_synth_1/hw_acc_sha256_0_0.dcp' has been generated.

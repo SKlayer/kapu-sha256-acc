@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan 28 14:28:48 2019
+# Process ID: 30292
+# Current directory: E:/acc_2562/sha256_acc2/acc256/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: E:/acc_2562/sha256_acc2/acc256/impl/ip/vivado.log
+# Journal file: E:/acc_2562/sha256_acc2/acc256/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

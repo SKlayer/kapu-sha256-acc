@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sha256.c" path="E:\acc_2562\sha256.c"/>
+    <originFiles name="sha256.h" path="E:\acc_2562\sha256.h"/>
+    <originFiles name="sha256_impl.c" path="E:\acc_2562\sha256_impl.c"/>
+    <originFiles name="sha256_impl.h" path="E:\acc_2562\sha256_impl.h"/>
+    <originFiles name="sha256.c" path="E:\acc_2562\sha256.c"/>
+    <originFiles name="sha256.h" path="E:\acc_2562\sha256.h"/>
+    <originFiles name="sha256_impl.c" path="E:\acc_2562\sha256_impl.c"/>
+    <originFiles name="sha256_impl.h" path="E:\acc_2562\sha256_impl.h"/>
+  </source>
+  <testbench>
+    <originFiles name="sha256_tb.c" path="E:\acc_2562\sha256_tb.c"/>
+    <originFiles name="sha256_tb.c" path="E:\acc_2562\sha256_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
